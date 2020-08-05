@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Login from './pages/Login'
+import Board from './pages/Board'
+import { AppContext } from './context/AppContext'
+import './App.css'
+
 
 function App() {
+  
+  const { isLogged } = useContext(AppContext)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/board" component={Board} />
+          <Route path="/" component={Login} />
+
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

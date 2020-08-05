@@ -1,0 +1,48 @@
+.login__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login__form > form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.login__form > form > h3 {
+    text-align: center;
+}
+
+.login__form > form > label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.login__form > form > input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.login__form_button{
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    background: #0f4c75;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+
+.login__form_button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+}
