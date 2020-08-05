@@ -7,3 +7,20 @@
     background: #0f4c75;
     color: white;
 }
+
+.header__user{
+    display: flex;
+    align-items: center;
+}
+
+.header__user > p, a{
+    margin-left: 10px;
+}
+
+.header__user > a{
+    text-decoration: underline;
+}
+
+.header__user > a:hover{
+    cursor: pointer;
+}

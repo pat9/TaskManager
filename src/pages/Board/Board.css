@@ -1,0 +1,13 @@
+.board__add_button{
+    width: 20%;
+    align-self: center;
+    padding: 10px;
+    background: #0f4c75;
+    color: white;
+    border: none;
+}
+
+.board__add_button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

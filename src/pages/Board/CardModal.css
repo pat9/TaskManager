@@ -1,0 +1,7 @@
+.content > form {
+    display: flex;
+    flex-direction: column;
+}
+.content > form > label, input, button {
+    margin: 5px 0;
+}
