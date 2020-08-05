@@ -8,7 +8,7 @@ import './Login.css'
 
 
 const validationSchema = Yup.object({
-    email: Yup.string().required("Required"),
+    email: Yup.string().email().required("Required"),
     password: Yup.string().required("Required")
   });
 
